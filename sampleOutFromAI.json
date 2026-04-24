@@ -1,0 +1,515 @@
+{
+    "success": true,
+    "status_code": 200,
+    "message": "Success",
+    "data": {
+        "success": true,
+        "status_code": 200,
+        "message": "Course generated successfully",
+        "data": {
+            "course": {
+                "title": "Introduction to Python Programming Fundamentals",
+                "subject": "programming",
+                "description": "This course provides a foundational introduction to Python, a versatile high-level programming language. Students will learn core concepts such as variables, fundamental data types, functions, and control flow mechanisms like loops and conditionals. Ideal for absolute beginners, this course will equip learners with the basic knowledge to start writing simple Python programs and understand its wide applications in web development, data science, and artificial intelligence.",
+                "difficulty_level": "beginner",
+                "estimated_duration": "1 week",
+                "outcomes": [
+                    {
+                        "description": "Students will be able to identify and explain the core concepts of Python programming, including variables, data types, and basic control flow.",
+                        "order": 0
+                    },
+                    {
+                        "description": "Students will be able to write simple Python scripts using variables, different data types, and implement basic conditional logic and loops.",
+                        "order": 1
+                    },
+                    {
+                        "description": "Students will understand the broad applications of Python in various fields such as web development, data science, and artificial intelligence.",
+                        "order": 2
+                    }
+                ],
+                "lessons": [
+                    {
+                        "title": "Lesson 1: Getting Started with Python and Variables",
+                        "estimated_time": "60 min",
+                        "completion_rule": "both",
+                        "min_quiz_score": 70,
+                        "order": 0,
+                        "blocks": [
+                            {
+                                "block_type": "text",
+                                "order": 0,
+                                "content": "Welcome to the exciting world of Python programming! Python is a high-level, interpreted, interactive and object-oriented scripting language. It is designed to be highly readable. It uses English keywords frequently where other languages use punctuation, and it has fewer syntactical constructions than other languages. Python is often used as a 'scripting language' for web applications, but it's also widely used in data science, artificial intelligence, machine learning, scientific computing, and more.\n\nOne of the most fundamental concepts in any programming language is a *variable. Think of a variable as a container or a named storage location in your computer's memory that holds a value. When you create a variable, you give it a name, and then you can store different types of data in it. Python is dynamically typed, which means you don't need to declare the type of a variable when you create it; Python figures it out automatically.\n\nDeclaring and Assigning Variables:\nTo create a variable in Python, you simply choose a name and assign a value to it using the assignment operator (=):\n\npython\n# Assigning an integer value\nmy_age = 30\n\n# Assigning a string value\nuser_name = \"Alice\"\n\n# Assigning a floating-point value\nprice = 19.99\n\n# Assigning a boolean value\nis_active = True\n\n\nVariable Naming Rules:\n   Variable names must start with a letter or an underscore (`_).\n*   They cannot start with a number.\n*   They can only contain alpha-numeric characters and underscores (A-z, 0-9, and _).\n*   Variable names are case-sensitive (`age, Age, and AGE are three different variables).\n*   Keywords (like if, else, for, while) cannot be used as variable names.\n\n*Printing Variables:*\nTo see the value stored in a variable, you can use the print() function. You can also combine text with variables using f-strings (formatted string literals), which are a very convenient way to embed expressions inside string literals.\n\npython\nname = \"Alice\"\nage = 30\n\nprint(name)           # Output: Alice\nprint(age)            # Output: 30\nprint(f\"Hello {name}, you are {age} years old.\") # Output: Hello Alice, you are 30 years old.\n\n\nUnderstanding variables is the first step towards writing dynamic and interactive programs in Python."
+                            }
+                        ],
+                        "quiz": {
+                            "questions": [
+                                {
+                                    "question_type": "multiple_choice",
+                                    "text": "What is Python primarily known for?",
+                                    "points": 1,
+                                    "explanation": "Python is a high-level programming language known for its readability and versatility across various domains like web, data science, and AI.",
+                                    "order": 0,
+                                    "correct_answer": null,
+                                    "accepted_answers": null,
+                                    "options": [
+                                        {
+                                            "text": "Being a low-level assembly language",
+                                            "is_correct": false
+                                        },
+                                        {
+                                            "text": "Being a high-level, general-purpose programming language",
+                                            "is_correct": true
+                                        },
+                                        {
+                                            "text": "Exclusively for game development",
+                                            "is_correct": false
+                                        },
+                                        {
+                                            "text": "Only for operating system development",
+                                            "is_correct": false
+                                        }
+                                    ],
+                                    "pairs": null
+                                },
+                                {
+                                    "question_type": "multiple_choice",
+                                    "text": "What is the purpose of a variable in programming?",
+                                    "points": 1,
+                                    "explanation": "Variables are named storage locations that hold data values, allowing programs to manipulate and reference data.",
+                                    "order": 1,
+                                    "correct_answer": null,
+                                    "accepted_answers": null,
+                                    "options": [
+                                        {
+                                            "text": "To define a new function",
+                                            "is_correct": false
+                                        },
+                                        {
+                                            "text": "To store data values in memory",
+                                            "is_correct": true
+                                        },
+                                        {
+                                            "text": "To execute a loop",
+                                            "is_correct": false
+                                        },
+                                        {
+                                            "text": "To print output to the console",
+                                            "is_correct": false
+                                        }
+                                    ],
+                                    "pairs": null
+                                },
+                                {
+                                    "question_type": "multiple_choice",
+                                    "text": "Which of the following is a valid Python variable name?",
+                                    "points": 1,
+                                    "explanation": "Variable names can start with a letter or an underscore and contain alphanumeric characters. '1st_name' starts with a number, 'my-variable' contains a hyphen, and 'if' is a reserved keyword.",
+                                    "order": 2,
+                                    "correct_answer": null,
+                                    "accepted_answers": null,
+                                    "options": [
+                                        {
+                                            "text": "1st_name",
+                                            "is_correct": false
+                                        },
+                                        {
+                                            "text": "my-variable",
+                                            "is_correct": false
+                                        },
+                                        {
+                                            "text": "_user_data",
+                                            "is_correct": true
+                                        },
+                                        {
+                                            "text": "if",
+                                            "is_correct": false
+                                        }
+                                    ],
+                                    "pairs": null
+                                },
+                                {
+                                    "question_type": "multiple_choice",
+                                    "text": "What will be the output of the following Python code snippet?\npython\nmessage = \"Hello Python\"\nprint(message)\n",
+                                    "points": 1,
+                                    "explanation": "The print() function outputs the value stored in the message variable, which is 'Hello Python'.",
+                                    "order": 3,
+                                    "correct_answer": null,
+                                    "accepted_answers": null,
+                                    "options": [
+                                        {
+                                            "text": "message",
+                                            "is_correct": false
+                                        },
+                                        {
+                                            "text": "\"Hello Python\"",
+                                            "is_correct": false
+                                        },
+                                        {
+                                            "text": "Hello Python",
+                                            "is_correct": true
+                                        },
+                                        {
+                                            "text": "Error",
+                                            "is_correct": false
+                                        }
+                                    ],
+                                    "pairs": null
+                                },
+                                {
+                                    "question_type": "multiple_choice",
+                                    "text": "Is Python a statically or dynamically typed language?",
+                                    "points": 1,
+                                    "explanation": "Python is dynamically typed, meaning you don't declare the variable type explicitly; it's determined at runtime.",
+                                    "order": 4,
+                                    "correct_answer": null,
+                                    "accepted_answers": null,
+                                    "options": [
+                                        {
+                                            "text": "Statically typed",
+                                            "is_correct": false
+                                        },
+                                        {
+                                            "text": "Dynamically typed",
+                                            "is_correct": true
+                                        },
+                                        {
+                                            "text": "Weakly typed",
+                                            "is_correct": false
+                                        },
+                                        {
+                                            "text": "Strongly typed",
+                                            "is_correct": false
+                                        }
+                                    ],
+                                    "pairs": null
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "title": "Lesson 2: Python Data Types",
+                        "estimated_time": "60 min",
+                        "completion_rule": "both",
+                        "min_quiz_score": 70,
+                        "order": 1,
+                        "blocks": [
+                            {
+                                "block_type": "text",
+                                "order": 0,
+                                "content": "In the previous lesson, we learned about variables as containers for data. Now, let's dive into the different *data types* that Python can store and manipulate. Understanding data types is crucial because they dictate what kind of operations you can perform on a value.\n\nPython has several built-in data types, which can be broadly categorized as follows:\n\n*1. Numeric Types:\n   *int (Integer):* Whole numbers, positive or negative, without decimals. Examples: 5, -100, 0.\n    python\n    age = 25\n    year = -2023\n    \n*   *`float` (Floating-point number):* Numbers with a decimal point. Examples: 3.14, -0.5, 100.0.\n    python\n    pi = 3.14159\n    temperature = 98.6\n    \n\n*2. Sequence Types:\n   *`str` (String):* A sequence of characters, enclosed in single (') or double (\") quotes. Strings are immutable, meaning their content cannot be changed after creation. Examples: 'Hello', \"Python\".\n    python\n    name = \"Alice\"\n    greeting = 'Hello World'\n    \n*   *`list` (List):* An ordered, mutable (changeable) sequence of items. Lists can hold items of different data types. Defined using square brackets []. Examples: [1, 2, 3], ['apple', 'banana', 'cherry'].\n    python\n    numbers = [10, 20, 30]\n    fruits = ['apple', 'banana', 'orange']\n    mixed_list = [1, 'hello', 3.14, True]\n    \n\n*3. Mapping Type:\n   *`dict` (Dictionary):* An unordered, mutable collection of key-value pairs. Each key must be unique and immutable (like strings or numbers), and it maps to a value. Defined using curly braces {}. Examples: {'name': 'Bob', 'age': 25}.\n    python\n    person = {\"name\": \"Bob\", \"age\": 30, \"city\": \"New York\"}\n    scores = {\"math\": 95, \"science\": 88}\n    \n\n*4. Boolean Type:\n   *`bool` (Boolean):* Represents one of two values: True or False. Used for logical operations. Examples: True, False.\n    python\n    is_student = True\n    has_license = False\n    \n\n*Checking Data Types:*\nYou can check the data type of any variable using the `type()` function:\n\npython\nx = 10\ny = 3.14\nz = \"Python\"\na = [1, 2, 3]\nb = {'key': 'value'}\nc = True\n\nprint(type(x)) # Output: <class 'int'>\nprint(type(y)) # Output: <class 'float'>\nprint(type(z)) # Output: <class 'str'>\nprint(type(a)) # Output: <class 'list'>\nprint(type(b)) # Output: <class 'dict'>\nprint(type(c)) # Output: <class 'bool'>\n\n\nUnderstanding these fundamental data types is essential for writing effective and correct Python programs, as they form the building blocks of all data manipulation."
+                            }
+                        ],
+                        "quiz": {
+                            "questions": [
+                                {
+                                    "question_type": "multiple_choice",
+                                    "text": "Which Python data type is used to store whole numbers?",
+                                    "points": 1,
+                                    "explanation": "int is used for integers (whole numbers), while float is for numbers with decimal points.",
+                                    "order": 0,
+                                    "correct_answer": null,
+                                    "accepted_answers": null,
+                                    "options": [
+                                        {
+                                            "text": "float",
+                                            "is_correct": false
+                                        },
+                                        {
+                                            "text": "str",
+                                            "is_correct": false
+                                        },
+                                        {
+                                            "text": "int",
+                                            "is_correct": true
+                                        },
+                                        {
+                                            "text": "bool",
+                                            "is_correct": false
+                                        }
+                                    ],
+                                    "pairs": null
+                                },
+                                {
+                                    "question_type": "multiple_choice",
+                                    "text": "What data type would best represent a person's name?",
+                                    "points": 1,
+                                    "explanation": "A person's name is a sequence of characters, best represented by a string (str).",
+                                    "order": 1,
+                                    "correct_answer": null,
+                                    "accepted_answers": null,
+                                    "options": [
+                                        {
+                                            "text": "int",
+                                            "is_correct": false
+                                        },
+                                        {
+                                            "text": "float",
+                                            "is_correct": false
+                                        },
+                                        {
+                                            "text": "str",
+                                            "is_correct": true
+                                        },
+                                        {
+                                            "text": "list",
+                                            "is_correct": false
+                                        }
+                                    ],
+                                    "pairs": null
+                                },
+                                {
+                                    "question_type": "multiple_choice",
+                                    "text": "Which of the following is an example of a Python list?",
+                                    "points": 1,
+                                    "explanation": "Lists are defined using square brackets [] and can contain multiple items. {'key': 'value'} is a dictionary, (1, 2, 3) is a tuple, and \"hello\" is a string.",
+                                    "order": 2,
+                                    "correct_answer": null,
+                                    "accepted_answers": null,
+                                    "options": [
+                                        {
+                                            "text": "{'key': 'value'}",
+                                            "is_correct": false
+                                        },
+                                        {
+                                            "text": "[1, 2, 3]",
+                                            "is_correct": true
+                                        },
+                                        {
+                                            "text": "(1, 2, 3)",
+                                            "is_correct": false
+                                        },
+                                        {
+                                            "text": "\"hello\"",
+                                            "is_correct": false
+                                        }
+                                    ],
+                                    "pairs": null
+                                },
+                                {
+                                    "question_type": "multiple_choice",
+                                    "text": "What does the type() function do in Python?",
+                                    "points": 1,
+                                    "explanation": "The type() function returns the data type of the object passed to it.",
+                                    "order": 3,
+                                    "correct_answer": null,
+                                    "accepted_answers": null,
+                                    "options": [
+                                        {
+                                            "text": "Converts a value to a string",
+                                            "is_correct": false
+                                        },
+                                        {
+                                            "text": "Checks if a variable is empty",
+                                            "is_correct": false
+                                        },
+                                        {
+                                            "text": "Returns the data type of an object",
+                                            "is_correct": true
+                                        },
+                                        {
+                                            "text": "Creates a new variable",
+                                            "is_correct": false
+                                        }
+                                    ],
+                                    "pairs": null
+                                },
+                                {
+                                    "question_type": "multiple_choice",
+                                    "text": "Which data type is used to represent True or False values?",
+                                    "points": 1,
+                                    "explanation": "The bool data type represents boolean values, which are True or False.",
+                                    "order": 4,
+                                    "correct_answer": null,
+                                    "accepted_answers": null,
+                                    "options": [
+                                        {
+                                            "text": "int",
+                                            "is_correct": false
+                                        },
+                                        {
+                                            "text": "str",
+                                            "is_correct": false
+                                        },
+                                        {
+                                            "text": "float",
+                                            "is_correct": false
+                                        },
+                                        {
+                                            "text": "bool",
+                                            "is_correct": true
+                                        }
+                                    ],
+                                    "pairs": null
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "title": "Lesson 3: Control Flow - Functions, Loops, and Conditionals",
+                        "estimated_time": "75 min",
+                        "completion_rule": "both",
+                        "min_quiz_score": 70,
+                        "order": 2,
+                        "blocks": [
+                            {
+                                "block_type": "text",
+                                "order": 0,
+                                "content": "Now that we understand variables and data types, let's explore how to control the flow of execution in our Python programs. Control flow statements allow us to make decisions, repeat actions, and organize our code into reusable blocks.\n\n*1. Conditionals (if, elif, else):\nConditional statements allow your program to make decisions based on whether certain conditions are true or false. They are fundamental for creating programs that can respond differently to various inputs or situations.\n\n   The if statement executes a block of code only if its condition is True.\n*   The elif (else if) statement allows you to check multiple conditions sequentially.\n*   The else statement executes a block of code if none of the preceding if or elif conditions are True.\n\npython\nage = 18\n\nif age >= 18:\n    print(\"You are old enough to vote.\")\nelif age >= 16:\n    print(\"You are almost old enough to vote.\")\nelse:\n    print(\"You are not old enough to vote.\")\n\n\n*2. Loops (`for` and while):\nLoops are used to execute a block of code repeatedly. This is incredibly useful for processing lists of items, performing calculations multiple times, or waiting for a certain condition to be met.\n\n   *for loop:* Used for iterating over a sequence (like a list, tuple, string, or range). It executes a block of code for each item in the sequence.\n    python\n    fruits = ['apple', 'banana', 'cherry']\n    for fruit in fruits:\n        print(fruit)\n    \n    # Using range()\n    for i in range(3): # This will loop 3 times (0, 1, 2)\n        print(f\"Iteration {i}\")\n    \n\n*   *`while` loop:* Executes a block of code as long as a specified condition is True. You must ensure that the condition eventually becomes False to avoid an infinite loop.\n    python\n    count = 0\n    while count < 3:\n        print(f\"Count is {count}\")\n        count += 1 # Increment count to eventually make the condition False\n    \n\n*3. Functions:*\nFunctions are reusable blocks of code that perform a specific task. They help organize your code, make it more readable, and prevent repetition (the DRY principle: Don't Repeat Yourself). You define a function using the `def` keyword.\n\npython\ndef greet(name):\n    \"\"\"This function greets the person passed in as a parameter.\"\"\"\n    print(f\"Hello, {name}!\")\n\ndef add_numbers(a, b):\n    \"\"\"This function adds two numbers and returns the sum.\"\"\"\n    return a + b\n\n# Calling the functions\ngreet(\"Alice\") # Output: Hello, Alice!\n\nresult = add_numbers(5, 3)\nprint(f\"The sum is: {result}\") # Output: The sum is: 8\n\n\nFunctions can take arguments (inputs) and can return values (outputs) using the `return` keyword. They are a cornerstone of structured programming."
+                            }
+                        ],
+                        "quiz": {
+                            "questions": [
+                                {
+                                    "question_type": "multiple_choice",
+                                    "text": "Which keyword is used to define a function in Python?",
+                                    "points": 1,
+                                    "explanation": "The def keyword is used to define a function in Python.",
+                                    "order": 0,
+                                    "correct_answer": null,
+                                    "accepted_answers": null,
+                                    "options": [
+                                        {
+                                            "text": "function",
+                                            "is_correct": false
+                                        },
+                                        {
+                                            "text": "func",
+                                            "is_correct": false
+                                        },
+                                        {
+                                            "text": "define",
+                                            "is_correct": false
+                                        },
+                                        {
+                                            "text": "def",
+                                            "is_correct": true
+                                        }
+                                    ],
+                                    "pairs": null
+                                },
+                                {
+                                    "question_type": "multiple_choice",
+                                    "text": "What will be printed by the following code?\npython\nscore = 85\nif score >= 90:\n    print(\"A\")\nelif score >= 80:\n    print(\"B\")\nelse:\n    print(\"C\")\n",
+                                    "points": 1,
+                                    "explanation": "The score is 85. The first condition (score >= 90) is false. The second condition (score >= 80) is true, so 'B' will be printed.",
+                                    "order": 1,
+                                    "correct_answer": null,
+                                    "accepted_answers": null,
+                                    "options": [
+                                        {
+                                            "text": "A",
+                                            "is_correct": false
+                                        },
+                                        {
+                                            "text": "B",
+                                            "is_correct": true
+                                        },
+                                        {
+                                            "text": "C",
+                                            "is_correct": false
+                                        },
+                                        {
+                                            "text": "Nothing",
+                                            "is_correct": false
+                                        }
+                                    ],
+                                    "pairs": null
+                                },
+                                {
+                                    "question_type": "multiple_choice",
+                                    "text": "Which type of loop is best suited for iterating over a list of items?",
+                                    "points": 1,
+                                    "explanation": "The for loop is specifically designed for iterating over sequences like lists, tuples, and strings.",
+                                    "order": 2,
+                                    "correct_answer": null,
+                                    "accepted_answers": null,
+                                    "options": [
+                                        {
+                                            "text": "while loop",
+                                            "is_correct": false
+                                        },
+                                        {
+                                            "text": "do-while loop",
+                                            "is_correct": false
+                                        },
+                                        {
+                                            "text": "for loop",
+                                            "is_correct": true
+                                        },
+                                        {
+                                            "text": "if-else statement",
+                                            "is_correct": false
+                                        }
+                                    ],
+                                    "pairs": null
+                                },
+                                {
+                                    "question_type": "multiple_choice",
+                                    "text": "What is the primary purpose of using functions in programming?",
+                                    "points": 1,
+                                    "explanation": "Functions promote code reusability and organization, avoiding repetition.",
+                                    "order": 3,
+                                    "correct_answer": null,
+                                    "accepted_answers": null,
+                                    "options": [
+                                        {
+                                            "text": "To make the code run faster",
+                                            "is_correct": false
+                                        },
+                                        {
+                                            "text": "To define new data types",
+                                            "is_correct": false
+                                        },
+                                        {
+                                            "text": "To make code reusable and organized",
+                                            "is_correct": true
+                                        },
+                                        {
+                                            "text": "To handle errors in the program",
+                                            "is_correct": false
+                                        }
+                                    ],
+                                    "pairs": null
+                                },
+                                {
+                                    "question_type": "multiple_choice",
+                                    "text": "What is crucial to prevent an infinite loop when using a while loop?",
+                                    "points": 1,
+                                    "explanation": "The condition in a while loop must eventually become False to terminate the loop; otherwise, it will run indefinitely.",
+                                    "order": 4,
+                                    "correct_answer": null,
+                                    "accepted_answers": null,
+                                    "options": [
+                                        {
+                                            "text": "Using an if statement inside the loop",
+                                            "is_correct": false
+                                        },
+                                        {
+                                            "text": "Ensuring the loop condition eventually becomes False",
+                                            "is_correct": true
+                                        },
+                                        {
+                                            "text": "Adding a print() statement",
+                                            "is_correct": false
+                                        },
+                                        {
+                                            "text": "Declaring all variables before the loop",
+                                            "is_correct": false
+                                        }
+                                    ],
+                                    "pairs": null
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "enrollment_type": "open",
+                "passing_score": 70,
+                "award_certificate": true,
+                "notify_on_enroll": true,
+                "notify_on_quiz_fail": true
+            }
+        },
+        "errors": null
+    }
+}
